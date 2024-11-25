@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Web Storage</title>
+    <style>
+        label,button{
+            display: block;
+            margin-top: 10px;
+        }
+        .labelRadio{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <!--Local Storage e Session Storage-->
+
+    <h1>Formulário de Contato</h1>
+
+    <form id="contactForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" maxlength="256" required/>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" maxlength="356" required/>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" required></textarea>
+
+        <label>Escolha onde você quer armazenar os dados:</label>
+        <input type="radio" id="localStorage" name="storage" value="local">
+        <label for="localStorage" class="labelRadio">Local Storage</label>
+        <input type="radio" id="sessionStorage" name="storage" value="session">
+        <label for="sessionStorage" class="labelRadio">Session Storage</label>
+
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <button id="showLocalStorage">Mostrar dados do Local Storage</button>
+    <button id="showSessionStorage">Mostrar dados do Session Storage</button>
+    <button id="clearSession">Reiniciar sessão</button>
+
+    <div id="storageData">
+        <div id="localStorageData" class="storage-section"></div>
+        <div id="sessionStorageData" class="storage-section"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

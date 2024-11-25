@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Web Storage - Cookies</title>
+    <style>
+        label,button{
+            display: block;
+            margin-top: 10px;
+        }
+        .labelRadio{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <!--Cookies-->
+
+    <h1>Exemplo de utilização de Cookie</h1>
+    <div id="welcomeMessage"></div>
+    <label for="name">Digite seu nome:</label>
+    <input type="text" id="name" name="name"/>
+    <button onclick="setCookie()">Salvar Username</button>
+    <button onclick="deleteCookie()">Deletar Cookie</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
